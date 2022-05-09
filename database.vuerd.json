@@ -1,0 +1,845 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -1143.888843434829,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "smart health",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "patient",
+        "comment": "",
+        "columns": [
+          {
+            "name": "patient_id",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "e14dd92d-4347-47ea-a32e-3157fe0d8d68"
+          },
+          {
+            "name": "patient_email",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.3271484375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "98c4774b-2200-4fa1-84cf-4f0c62226bf7"
+          },
+          {
+            "name": "patient_phone",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 84.41162109375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "af3b464d-aa98-45ee-b7c9-0e20551f41c8"
+          },
+          {
+            "name": "patien_password",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 100.287109375,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "1e7cef58-bee6-4f1f-bdaa-f13acd2487bd"
+          },
+          {
+            "name": "patient_photo_url",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 102.470703125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "d07063e7-6ff2-4609-9d9e-e5c0aa570559"
+          },
+          {
+            "name": "patient_lastname",
+            "comment": "",
+            "dataType": "VARCHAR(25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.0107421875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "990e8e48-5385-4925-a4e6-b7c1d3f1f0cf"
+          },
+          {
+            "name": "patient_firstname",
+            "comment": "",
+            "dataType": "VARCHAR(25)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.7216796875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "c00f9252-dde0-4c8b-9660-258bec91c546"
+          },
+          {
+            "name": "patient_birthdate",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.8525390625,
+              "widthComment": 60,
+              "widthDataType": 76.87060546875,
+              "widthDefault": 60
+            },
+            "id": "8860f3c2-26b7-47c1-be1c-e05425527a8d"
+          },
+          {
+            "name": "patient_sex",
+            "comment": "",
+            "dataType": "VARCHAR(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68.49169921875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "de3771ff-b81b-41be-a3ba-33666415ddb8"
+          },
+          {
+            "name": "patient_height",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 83.681640625,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "edb48b8c-59c8-4196-b03c-097bdfc1e27b"
+          },
+          {
+            "name": "patient_weight_id",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103.18798828125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "0524c14b-df98-4958-be8e-a9063e623cb5"
+          },
+          {
+            "name": "patient_glucose_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.41796875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "3ba33d4c-8b2a-4a48-9928-476afb9008a6"
+          },
+          {
+            "name": "patient_bpressure_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 123.41796875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "b54c76bc-d58b-47ce-87d1-44dce851c57a"
+          },
+          {
+            "name": "patient_hb1c_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.7998046875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "31682348-273d-4610-acc5-3e0b40ba24bb"
+          },
+          {
+            "name": "patient_steps_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 96.681640625,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "85b8c3d9-7ce5-4e1c-a1a4-0837ff57c397"
+          },
+          {
+            "name": "patient_tsh_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.95166015625,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "fc6574fd-5f6d-40b7-8d3f-b4b4576a0c3e"
+          },
+          {
+            "name": "patient_oxygen_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 107.52978515625,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "85442a35-75f4-4003-9eb7-374d9ab945b7"
+          },
+          {
+            "name": "patient_temp_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.5107421875,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "cd7bab2b-3f91-4949-9784-561029ad3ca7"
+          },
+          {
+            "name": "patient_creatinine_id",
+            "comment": "",
+            "dataType": "SMALLINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 121.97705078125,
+              "widthComment": 60,
+              "widthDataType": 65.57177734375,
+              "widthDefault": 60
+            },
+            "id": "ae9a2a8a-c365-494e-868f-3922516cff50"
+          },
+          {
+            "name": "weight_id",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "5ef53f61-a149-4b0a-9388-4fdb50d145d6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 168.3331,
+          "top": 22.7771,
+          "zIndex": 228,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7d1489f8-90a3-4c51-bf17-ef316d97f779"
+      },
+      {
+        "name": "weight",
+        "comment": "",
+        "columns": [
+          {
+            "name": "weight_id",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "3ee372e8-7180-4e33-913e-b15979f608a5"
+          },
+          {
+            "name": "patient_id",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "193fe35a-69fb-40e0-a3f5-04412477ab31"
+          },
+          {
+            "name": "created_by",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.32080078125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "a5d3588a-ef18-4259-9287-d3af5fb1da65"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "0b44b258-2caa-44cf-928b-98334ebf7ec7"
+          },
+          {
+            "name": "uploaded_at",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.56982421875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "be290895-7bfa-465d-8d7e-fcee4ee929eb"
+          },
+          {
+            "name": "place_taken",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.10986328125,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "45eb155b-352a-4dbc-94e6-3d71624a4155"
+          },
+          {
+            "name": "device_id",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "77010727-86c2-4ee2-ba03-4cedc28f550a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 822.196,
+          "top": 65.4326,
+          "zIndex": 295,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "e73e913c-61dd-4499-8e26-cc0e40b0875d"
+      },
+      {
+        "name": "devise",
+        "comment": "",
+        "columns": [
+          {
+            "name": "device_id",
+            "comment": "",
+            "dataType": "VARCHAR(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "f174267e-defe-4bf6-af71-460b23d5c8b4"
+          },
+          {
+            "name": "device_type",
+            "comment": "",
+            "dataType": "ENUM",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.3798828125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6f2a4774-f8cd-4026-bd4a-bfbef385231c"
+          },
+          {
+            "name": "device_brand",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.05712890625,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "337eefae-aa81-4a20-b3c2-5ef4d233f95f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1389.8607,
+          "top": 80.9478,
+          "zIndex": 306,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7fdb1ccd-4354-405b-8db8-913d90cd8595"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7d1489f8-90a3-4c51-bf17-ef316d97f779",
+          "columnIds": [
+            "e14dd92d-4347-47ea-a32e-3157fe0d8d68"
+          ],
+          "x": 613.6997992187501,
+          "y": 262.2771,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "e73e913c-61dd-4499-8e26-cc0e40b0875d",
+          "columnIds": [
+            "193fe35a-69fb-40e0-a3f5-04412477ab31"
+          ],
+          "x": 822.196,
+          "y": 171.68259999999998,
+          "direction": "left"
+        },
+        "constraintName": "fk_patient_to_weight",
+        "visible": true,
+        "id": "14190571-675f-42a6-a6b5-8bc641d3e5cc"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Ring",
+        "start": {
+          "tableId": "7fdb1ccd-4354-405b-8db8-913d90cd8595",
+          "columnIds": [
+            "f174267e-defe-4bf6-af71-460b23d5c8b4"
+          ],
+          "x": 1389.8607,
+          "y": 146.1978,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "e73e913c-61dd-4499-8e26-cc0e40b0875d",
+          "columnIds": [
+            "77010727-86c2-4ee2-ba03-4cedc28f550a"
+          ],
+          "x": 1210.48457421875,
+          "y": 171.68259999999998,
+          "direction": "right"
+        },
+        "constraintName": "fk_devise_to_weight",
+        "visible": true,
+        "id": "46936905-bb75-41c0-afaa-5a3dc577bdb6"
+      }
+    ]
+  }
+}
